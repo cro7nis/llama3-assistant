@@ -5,6 +5,8 @@ The assistant uses the 8B-parameter model which is fast and requires ~5GB VRAM a
 
 The project is developed for the "[Create and deploy guide](https://zealy.io/cw/akashnetwork/questboard/e9061118-f7f6-4430-b974-c989d79c13da/3e820013-25f9-4c7f-9856-c2c82eebb86d)" zealy task which is hosted by Akash.
 
+<img src="./assets/llama3.gif" alt="drawing">
+
 ## Deploy on Akash guide <img src="./assets/akash-logo.png" alt="drawing" width=20 height=20/> 
 
 
@@ -25,5 +27,3 @@ The project is developed for the "[Create and deploy guide](https://zealy.io/cw/
 - Go to LEASES and press the URI
 - Check the [Akash docs](https://akash.network/docs/deployments/cloudmos-deploy/) if you have and questions
 - Start chatting!
-
-<img src="./assets/llama3.gif" alt="drawing">
