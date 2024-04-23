@@ -1,0 +1,64 @@
+---
+version: "2.0"
+services:
+  ollama3:
+    image: cro7/ollama3:0.0.1
+    expose:
+      - port: 8080
+        as: 8080
+        to:
+          - service: ui
+          - global: true
+    env:
+      - OLLAMA_HOST=0.0.0.0:8080
+  ui:
+    image: cro7/ollama3_ui:0.0.1
+    expose:
+      - port: 8051
+        as: 80
+        to:
+          - global: true
+    env:
+      - UI_OLLAMA_HOST=ollama3:8080
+      - PORT=8051
+profiles:
+  compute:
+    ollama3:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 5Gi
+        storage:
+          - size: 10Gi
+        gpu:
+          units: 1
+          attributes:
+            vendor:
+              nvidia:
+    ui:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 2Gi
+        storage:
+          - size: 5Gi
+  placement:
+    dcloud:
+      pricing:
+        ollama3:
+          denom: uakt
+          amount: 1000
+        ui:
+          denom: uakt
+          amount: 1000
+deployment:
+  ollama3:
+    dcloud:
+      profile: ollama3
+      count: 1
+  ui:
+    dcloud:
+      profile: ui
+      count: 1

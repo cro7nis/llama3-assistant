@@ -1,0 +1,2 @@
+default:
+  ollama_host: localhost:11434
