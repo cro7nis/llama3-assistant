@@ -10,6 +10,9 @@ The project is developed for the "[Create and deploy guide](https://zealy.io/cw/
 ## Deploy on Akash guide <img src="./assets/akash-logo.png" alt="drawing" width=20 height=20/> 
 
 
+https://github.com/cro7nis/llama3-assistant/assets/166608635/80bb441a-3727-4466-9a73-47cbe0029d2b
+
+
 - Create and fund a Keplr or Leap wallet
   - [Keplr wallet](https://akash.network/docs/getting-started/token-and-wallets/#keplr-wallet)
   - [Leap wallet](https://akash.network/docs/getting-started/token-and-wallets/#leap-cosmos-wallet)
