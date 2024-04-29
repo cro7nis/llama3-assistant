@@ -18,7 +18,7 @@ https://github.com/cro7nis/llama3-assistant/assets/166608635/80bb441a-3727-4466-
   - [Leap wallet](https://akash.network/docs/getting-started/token-and-wallets/#leap-cosmos-wallet)
 - Visit https://deploy.cloudmos.io/
 - Connect your wallet
-  - You need to have at least 5 AKT
+  - You need to have at least 0.5 AKT
 - Press the deploy button
 - Select "Build your template"
 - (Optional) Name your deployment
